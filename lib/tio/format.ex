@@ -1,5 +1,5 @@
 defmodule Tio.Format do
-  @moduledoc false
+  @moduledoc "Formatting functions used by the functions in the Tio module."
 
   @message_types %{
     action: :cyan,

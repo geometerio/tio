@@ -56,7 +56,7 @@ defmodule Tio.MixProject do
 
   defp docs do
     [
-      main: "Tío",
+      main: "Tio",
       extras: ["README.md"]
     ]
   end

@@ -2,6 +2,8 @@
 
 Some simple helpers for input and output in terminal-based (CLI) apps.
 
+Documentation: [hexdocs.pm/tio](https://hexdocs.pm/tio) | Code: [github.com/geometerio/tio](https://github.com/geometerio/tio)
+
 ## Installation
 
 Add `tio` to your list of dependencies in `mix.exs`:
@@ -13,10 +15,6 @@ def deps do
   ]
 end
 ```
-
-## Documentation
-
-Documentation is at [https://hexdocs.pm/tio](https://hexdocs.pm/tio).
 
 ## Contributing
 
