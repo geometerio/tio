@@ -5,12 +5,29 @@ defmodule Tio.MixProject do
     [
       app: :tio,
       deps: deps(),
+      description: "A few helpful functions for terminal I/O",
       dialyzer: dialyzer(),
+      docs: docs(),
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
+      name: "Tío",
+      package: [
+        file: ~w[
+          .formatter.ex
+          CHANGELOG.md
+          lib
+          LICENSE.md
+          mix.exs
+          README.md
+          VERSION
+        ],
+        licenses: ["MIT-0"],
+        links: %{}
+      ],
       preferred_cli_env: [credo: :test, dialyzer: :test],
+      source_url: "https://github.com/geometerio/tio",
       start_permanent: Mix.env() == :prod,
-      version: "1.0.0"
+      version: version()
     ]
   end
 
@@ -36,6 +53,20 @@ defmodule Tio.MixProject do
     ]
   end
 
+  defp docs do
+    [
+      main: "Tío",
+      extras: ["README.md"]
+    ]
+  end
+
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
+
+  defp version do
+    case File.read("VERSION") do
+      {:error, _} -> "0.0.0"
+      {:ok, version_number} -> version_number |> String.trim()
+    end
+  end
 end
