@@ -2,7 +2,7 @@
 
 Some simple helpers for input and output in terminal-based (CLI) apps.
 
-Documentation: [hexdocs.pm/tio](https://hexdocs.pm/tio) | Code: [github.com/geometerio/tio](https://github.com/geometerio/tio)
+[API Reference](https://hexdocs.pm/tio/api-reference.html) | [Code](https://github.com/geometerio/tio)
 
 ## Installation
 
@@ -23,3 +23,6 @@ all checks and tests and commit the changes.
 
 Please include tests with contributions.
 
+## Copyright and license
+
+Copyright © 2022 Geometer, LLC. See also [License](https://github.com/geometerio/tio/blob/main/LICENSE.md)

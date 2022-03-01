@@ -1,6 +1,6 @@
 defmodule Tio do
   @moduledoc """
-  A few helpful functions for terminal I/O.
+  A few helpful functions for terminal I/O. Read more in the [readme](https://hexdocs.pm/tio/readme.html).
 
   * `step` should be used to show a group of actions is about to start
   * `action` should be used to show an action is starting
